@@ -1,44 +1,47 @@
 import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
+import img from '../assets/images/img1.jpg'
+import img1 from '../assets/images/homepage.jpg'
+import img2 from '../assets/images/screenshot4.png'
+
 
 function Cards() {
   return (
     <div className='cards'>
-      <h1>Check out these EPIC Destinations!</h1>
+      <h1>Check out my projects!</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src='images/img-9.jpg'
-              text='Explore the hidden waterfall deep inside the Amazon Jungle'
-              label='Adventure'
+              src={img}
+              text='Webcrawler'
+              label='Java'
               path='/services'
             />
             <CardItem
-              src='images/img-2.jpg'
-              text='Travel through the Islands of Bali in a Private Cruise'
-              label='Luxury'
+              src={img2}
+              text='My 2D game'
+              label='SFML (C++)'
               path='/services'
             />
           </ul>
           <ul className='cards__items'>
             <CardItem
-              src='images/img-3.jpg'
-              text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
-              label='Mystery'
+              text='COMING SOON! My personal website'
+              label='React (Java Script)'
               path='/services'
             />
             <CardItem
-              src='images/img-4.jpg'
-              text='Experience Football on Top of the Himilayan Mountains'
-              label='Adventure'
+              src={img1}
+              text='My pc application'
+              label='Flutter (Dart)'
               path='/products'
             />
             <CardItem
               src='images/img-8.jpg'
-              text='Ride through the Sahara Desert on a guided camel tour'
-              label='Adrenaline'
+              text='COMING SOON! My mobile application'
+              label='Flutter (Dart)'
               path='/sign-up'
             />
           </ul>
