@@ -40,11 +40,11 @@ function Navbar() {
                 Home
               </Link>
               <Link
-                to='/404'
+                to='/projects'
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
-                Sign Up
+                Projects
               </Link>
             </li>
           </ul>

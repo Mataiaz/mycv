@@ -14,30 +14,12 @@ function Footer() {
                 <div className='footer-link-wrapper'>
                     <div className='footer-link-items'>
                         <h2>About me</h2>
-                        <Link to='sign-up'>My Github account</Link>
-                        <Link to='sign-up'>My Linkedin account</Link>
+                        <a href='https://github.com/Mataiaz'>My Github account</a>
+                        <a href='https://www.linkedin.com/in/mathias-bjarnason-946187231/'>My Linkedin account</a>
                     </div>
                 </div>
             </div>
-            <section className='social-media'>
-                <div className='social-media-wrap'>
-                    <div className='footer-logo'>
-                        <Link to='/' className='social-logo'>
-                            Hello <i className='fab fa-typo3' />
-                        </Link>
-                    </div>
-                    <small className='Credit of website'>I made everything in this website, including styling, images, videos and functionality</small>
-                    <div className='social-icons'>
-                        <Link className='social-icon-link linkedin'
-                        to='/'
-                        target='_blank'
-                        aria-label='Linkedin'
-                        >
-                            <i className='fab fa-linkedin'></i>
-                        </Link>
-                    </div>
-                </div>
-            </section>
+            <small className='credit-of-website'>I made everything in this website, including styling, images and functionality</small>
         </div>
     )
 }
