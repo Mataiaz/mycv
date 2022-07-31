@@ -12,7 +12,7 @@ Pictures at the bottom (You can press on them to get a closer look).
 
 ## Features ##
 * A navigation menu
-* Mobile friendly
+* Mobile friendly (Needs work)
 * drop menu for the mobile users
 * easy to change styling and colors
 * Text, images and videos are accounted for when stretching window to any size
