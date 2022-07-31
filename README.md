@@ -5,7 +5,7 @@ and facing the challenge of syntax that has been updated multiple times over the
 
 FYI: None of the design is copyrighted.
 
-# If you are intrested in the #
+# If you are interested in the #
 https://github.com/Mataiaz/Website-crawler-demo
 
 Pictures at the bottom (You can press on them to get a closer look).
