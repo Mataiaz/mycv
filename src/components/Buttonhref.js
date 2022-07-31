@@ -6,10 +6,10 @@ const STYLES = ['btn--primary', 'btn--outline', 'btn--test'];
 
 const SIZES = ['btn--medium', 'btn--large'];
 
-export const Button = ({
+export const Buttonhref = ({
   children,
   type,
-  value,
+  hrefvalue,
   onClick,
   buttonStyle,
   buttonSize
@@ -21,7 +21,7 @@ export const Button = ({
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
   return (
-    <Link to={value} className='btn-mobile'>
+    <a href={hrefvalue}>
       <button
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}
         onClick={onClick}
@@ -29,6 +29,6 @@ export const Button = ({
       >
         {children}
       </button>
-      </Link>
+      </a>
   );
 };
