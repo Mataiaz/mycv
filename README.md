@@ -21,5 +21,5 @@ mathias344@live.no
 
 Made by Mathias L. Bjarnason
 ![](https://github.com/Mataiaz/mycv/blob/master/src/assets/images/snip1.png)
-![](https://github.com/Mataiaz/mycv/blob/master/src/assets/images/snip 2.png)
+![](https://github.com/Mataiaz/mycv/blob/master/src/assets/images/snip%202.png)
 ![](https://github.com/Mataiaz/mycv/blob/master/src/assets/images/snip3.png)
