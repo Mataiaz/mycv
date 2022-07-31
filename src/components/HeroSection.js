@@ -11,7 +11,7 @@ function HeroSection() {
       <h1>Hi!</h1>
       <p>My name is Mathias ask me anything at mathias344@live.no</p>
       <div className="hero-btns">
-        <Button className='btns' buttonStyle='btn--outline'
+        <Button className='btns' buttonStyle='btn--outline' value='https://github.com/Mataiaz'
         buttonSize='btn--large'>
           my github account!
         </Button>

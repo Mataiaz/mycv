@@ -4,6 +4,7 @@ import CardItem from './CardItem';
 import img from '../assets/images/img1.jpg'
 import img1 from '../assets/images/homepage.jpg'
 import img2 from '../assets/images/screenshot4.png'
+import img3 from '../assets/images/picwebsite.png'
 
 
 function Cards() {
@@ -17,26 +18,27 @@ function Cards() {
               src={img}
               text='Webcrawler'
               label='Java'
-              path='/services'
+              path='https://github.com/Mataiaz/Website_Crawler'
             />
             <CardItem
               src={img2}
               text='My 2D game'
               label='SFML (C++)'
-              path='/services'
+              path='https://github.com/SirFischer/Skeletons-and-Traps'
             />
           </ul>
           <ul className='cards__items'>
             <CardItem
-              text='COMING SOON! My personal website'
+              src={img3}
+              text='My personal website'
               label='React (Java Script)'
-              path='/services'
+              path='https://github.com/Mataiaz/mycv/tree/master'
             />
             <CardItem
               src={img1}
               text='My pc application'
               label='Flutter (Dart)'
-              path='/products'
+              path='https://github.com/Mataiaz/My-Demo-App'
             />
             <CardItem
               src='images/img-8.jpg'

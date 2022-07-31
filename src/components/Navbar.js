@@ -28,7 +28,7 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/github' className='navbar-logo' onClick={closeMobileMenu}>
+          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
             My CV
           </Link>
           <div className='menu-icon' onClick={handleClick}>
@@ -40,7 +40,7 @@ function Navbar() {
                 Home
               </Link>
               <Link
-                to='/sign-up'
+                to='/404'
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
@@ -48,7 +48,6 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
         </div>
       </nav>
     </>
