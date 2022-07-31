@@ -15,6 +15,7 @@ Pictures at the bottom (You can press on them to get a closer look).
 * Mobile friendly
 * drop menu for the mobile users
 * easy to change styling and colors
+* Text, images and videos are accounted for when stretching window to any size
 
 ## Contact ##
 mathias344@live.no
