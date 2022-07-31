@@ -15,7 +15,7 @@ function AboutMe() {
       <p></p>
       <p></p>
       <p>I speak norwegian and english</p>
-      <p>My hobby is animation and also love to challenge myself to new things</p>
+      <p>My hobby is animation and i also love to challenge myself to new things</p>
       <div className="hero-btns">
         <Button className='btns' buttonStyle='btn--primary' value ='/projects'
         buttonSize='btn--large'>
