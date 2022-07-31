@@ -15,7 +15,7 @@ function HeroSection() {
         buttonSize='btn--large'>
           my github account!
         </Button>
-        <Button className='btns' buttonStyle='btn--primary' value ='/projects'
+        <Button className='btns' buttonStyle='btn--primary' value ='https://mathiaslb.netlify.app/projects'
         buttonSize='btn--large'>
           Why you should hire me <i className='far fa-play-circle' />
         </Button>
