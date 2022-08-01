@@ -3,6 +3,8 @@ import '../App.css';
 import Cards from '../components/Cards';
 import Footer from '../components/Footer';
 import { Button } from '../components/Button';
+import { Buttonhref } from '../components/Buttonhref';
+import pdf from '../assets/CV - MATHIAS LOMHOLT BJARNASON ENG.pdf'
 
 function Projects() {
   return (
@@ -14,10 +16,17 @@ function Projects() {
       <p>
         I am currently taking the education course at Noroff that started in august 2022 in backend-development
       </p>
-    <Button className='btns' buttonStyle='btn--outline' value='https://github.com/Mataiaz'
+      <div className="hero-btns">
+      <Buttonhref className='btns' buttonStyle='btn--outline' hrefvalue='https://github.com/Mataiaz'
         buttonSize='btn--large'>
           my github account!
-        </Button>
+        </Buttonhref>
+        <Buttonhref className='btns' buttonStyle='btn--outline' hrefvalue={pdf}
+        buttonSize='btn--large'>
+          My CV as a PDF!
+        </Buttonhref>
+      </div>
+    
     </div>
     <Cards/>
       <Footer/>
