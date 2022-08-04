@@ -15,14 +15,12 @@ function App() {
         <Navbar>
           <Router>
             <Route path="/" element={<Home />} />
-            <Route path="/Dev" element={<Dev />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/aboutMe" element={<AboutMe />} />
           </Router>
         </Navbar>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Dev" element={<Dev />} />
             <Route path="/projects" element={<Projects />} />
           <Route path="/aboutMe" element={<AboutMe />} />
         </Routes>
