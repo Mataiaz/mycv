@@ -1,5 +1,5 @@
 {
-    "proxy": "http://localhost:4000",
+    "proxy": "https://mathiaslb.netlify.app:8888",
     "name": "mycv",
     "version": "0.1.0",
     "private": true,
