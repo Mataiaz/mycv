@@ -1,5 +1,4 @@
 const express = require('express')
-const Comment = require('../models/commentModel.js')
 const {
     createComment,
     getComments,
