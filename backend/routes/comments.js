@@ -1,4 +1,5 @@
 const express = require('express')
+const Comment = require('..models/commentModel')
 
 const router = express.Router()
 
@@ -13,7 +14,15 @@ router.get('/:id', (req, res) => {
 })
 
 //POST a new comment
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
+    const {text} = req.body
+
+    try {
+        const comment = await Comment.create({text})
+        res.status(200).json(comment)
+    } catch (error) {
+        console.log(error)
+    }
     res.json({mssg: 'hello i am POST'})
 })
 
