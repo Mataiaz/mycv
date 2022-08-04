@@ -8,7 +8,7 @@ import CommentDetails from '../components/CommentDetails';
 import CommentForm from '../components/CommentForm';
 import { useCommentsContext } from '../hooks/useCommentsContext'
 
-function Home() {
+function Dev() {
   const {comments, dispatch} = useCommentsContext()
 
   useEffect(() => {
@@ -41,4 +41,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Dev;
