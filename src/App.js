@@ -6,7 +6,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Projects from './pages/Projects';
 import AboutMe from './pages/AboutMe';
-import Dev from './pages/Dev';
 
 function App() {
   return (
