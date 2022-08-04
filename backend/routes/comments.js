@@ -1,38 +1,28 @@
 const express = require('express')
-const Comment = require('..models/commentModel')
+const Comment = require('../models/commentModel.js')
+const {
+    createComment,
+    getComments,
+    getComment,
+    deleteComment,
+    updateComment
+} = require('../controllers/commentController.js')
 
 const router = express.Router()
 
 //GET all comments
-router.get('/', (req, res) => {
-    res.json({mssg: 'hello i am ALL'})
-})
+router.get('/', getComments)
 
 //GET a single comment
-router.get('/:id', (req, res) => {
-    res.json({mssg: 'hello i am SINGEL'})
-})
+router.get('/:id', getComment)
 
 //POST a new comment
-router.post('/', async (req, res) => {
-    const {text} = req.body
-
-    try {
-        const comment = await Comment.create({text})
-        res.status(200).json(comment)
-    } catch (error) {
-        console.log(error)
-    }
-    res.json({mssg: 'hello i am POST'})
-})
+router.post('/', createComment)
 
 //DELETE a comment
-router.delete('/:id', (req, res) => {
-    res.json({mssg: 'hello i am DELETE'})
-})
+router.delete('/:id', deleteComment)
 
 //Update a new comment
-router.patch('/:id', (req, res) => {
-    res.json({mssg: 'hello i am UPDATE'})
-})
+router.patch('/:id', updateComment)
+
 module.exports = router
