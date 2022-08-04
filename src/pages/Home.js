@@ -5,6 +5,7 @@ import HeroSection from '../components/HeroSection';
 import Cards from '../components/Cards';
 import Footer from '../components/Footer';
 import CommentDetails from '../components/CommentDetails';
+import CommentForm from '../components/CommentForm';
 
 function Home() {
   const [comments, setComments] = useState(null)
@@ -14,7 +15,7 @@ function Home() {
       const response = await fetch('/api/comments')
       const json = await response.json()
 
-      if(response.ok) {
+      if (response.ok) {
         setComments(json)
       }
     }
@@ -24,17 +25,18 @@ function Home() {
 
   return (
     <>
-      <HeroSection/>
-      <Cards/>
+      <HeroSection />
+      <Cards />
       <div className='home'>
-      <div className='comments'>
-        {comments && comments.map((comment) => (
-           <CommentDetails comment={comment} key={comment._id} />
-        ))}
+        <div className='comments'>
+          {comments && comments.map((comment) => (
+            <CommentDetails comment={comment} key={comment._id} />
+          ))}
+        </div>
+        <CommentForm />
       </div>
-      </div>
-      
-      <Footer/>
+
+      <Footer />
     </>
   );
 }
