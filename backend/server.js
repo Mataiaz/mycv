@@ -7,6 +7,8 @@ const commentRoutes = require('./routes/comments')
 const app = express()
 
 //middleware
+app.use(express.json())
+
 app.use((req, res, next) => {
     console.log(req.path, req.method)
     next()

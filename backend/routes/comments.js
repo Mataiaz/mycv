@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
 })
 
 //GET a single comment
-router.get('/:id', (res, req) => {
+router.get('/:id', (req, res) => {
     res.json({mssg: 'hello i am SINGEL'})
 })
 
@@ -23,7 +23,7 @@ router.delete('/:id', (req, res) => {
 })
 
 //Update a new comment
-router.patch('/_id', (req, res) => {
+router.patch('/:id', (req, res) => {
     res.json({mssg: 'hello i am UPDATE'})
 })
 module.exports = router
