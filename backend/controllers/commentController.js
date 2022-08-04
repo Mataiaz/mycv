@@ -32,6 +32,17 @@ const getComment = async (req, res) => {
 const createComment = async (req, res) => {
     const {text} = req.body
 
+    let emptyFields = []
+
+    if(!text) {
+        emptyFields.push('text')
+    }
+    if(emptyFields.length > 0)
+    {
+        return res.status(400).json({error: 'Please write something inside the field', emptyFields})
+    }
+
+
     //add doc to db
     try {
         const comment = await Comment.create({text})
