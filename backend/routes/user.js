@@ -2,6 +2,9 @@ const express = require('exoress')
 
 const router = express.Router()
 
+//controller functions
+const {signupUser, loginUser} = require('../controllers/userController')
+
 //login route
 router.post('/login', () => {})
 
