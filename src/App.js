@@ -6,7 +6,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Projects from './pages/Projects';
 import AboutMe from './pages/AboutMe';
-import Dev from './pages/Dev';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
 
@@ -17,7 +16,6 @@ function App() {
         <Navbar>
           <Router>
             <Route path="/" element={<Home />} />
-            <Route path="/Dev" element={<Dev />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/aboutMe" element={<AboutMe />} />
             <Route path="/signup" element={<Signup />} />
@@ -26,7 +24,6 @@ function App() {
         </Navbar>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Dev" element={<Dev />} />
             <Route path="/projects" element={<Projects />} />
           <Route path="/aboutMe" element={<AboutMe />} />
           <Route path="/signup" element={<Signup />} />

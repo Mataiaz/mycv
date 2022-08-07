@@ -1,15 +1,23 @@
 import { useCommentsContext } from "../hooks/useCommentsContext"
+import { useAuthContext } from "../hooks/useAuthContext"
 
 //date fns
 import formatDistanceToNow from 'date-fns/formatDistanceToNow'
 
 const CommentDetails = ({ comment }) => {
     const { dispatch } = useCommentsContext()
+    const { user } = useAuthContext()
 
     const handleClick = async () => {
+        if (!user) {
+            return
+        }
 
         const response = await fetch('/api/comments/' + comment._id, {
-            method: 'DELETE'
+            method: 'DELETE',
+            header: {
+                'Authorization': `Bearer ${user.toke}`
+            }
         })
         const json = await response.json()
 

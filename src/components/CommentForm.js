@@ -1,9 +1,11 @@
 import { useState } from "react"
 import { useCommentsContext } from '../hooks/useCommentsContext'
+import { useAuthContext } from "../hooks/useAuthContext"
 
 
 const CommentForm = () => {
     const { dispatch } = useCommentsContext()
+    const { user } = useAuthContext()
   
     const [text, setText] = useState('')
     const [error, setError] = useState(null)
@@ -11,6 +13,11 @@ const CommentForm = () => {
   
     const handleSubmit = async (e) => {
       e.preventDefault()
+
+      if(!user) {
+        setError('You must be logged in')
+        return
+      }
   
       const comment = {text}
       
@@ -18,7 +25,8 @@ const CommentForm = () => {
         method: 'POST',
         body: JSON.stringify(comment),
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${user.toke}`
         }
       })
       const json = await response.json()
