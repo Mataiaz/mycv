@@ -11,12 +11,6 @@ import { useAuthContext } from '../hooks/useAuthContext';
 
 function Home() {
   const {comments, dispatch} = useCommentsContext()
-<<<<<<< HEAD
-
-  useEffect(() => {
-    const fetchComments = async () => {
-      const response = await fetch('/api/comments')
-=======
   const {user} = useAuthContext()
 
   useEffect(() => {
@@ -26,23 +20,16 @@ function Home() {
           'Authorization': `Bearer ${user.toke}`
         }
       })
->>>>>>> backend
       const json = await response.json()
 
       if (response.ok) {
         dispatch({ type: 'SET_COMMENTS', payload: json })
       }
     }
-<<<<<<< HEAD
-    fetchComments()
-  }, [dispatch])
-=======
     if(user) {
       fetchComments()
     }
   }, [dispatch, user])
->>>>>>> backend
-
   return (
     <>
       <HeroSection />
