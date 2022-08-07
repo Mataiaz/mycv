@@ -7,6 +7,8 @@ import './App.css';
 import Projects from './pages/Projects';
 import AboutMe from './pages/AboutMe';
 import Dev from './pages/Dev';
+import Signup from './pages/Signup';
+import Login from './pages/Login';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
             <Route path="/Dev" element={<Dev />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/aboutMe" element={<AboutMe />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/login" element={<Login />} />
           </Router>
         </Navbar>
         <Routes>
@@ -25,6 +29,8 @@ function App() {
           <Route path="/Dev" element={<Dev />} />
             <Route path="/projects" element={<Projects />} />
           <Route path="/aboutMe" element={<AboutMe />} />
+          <Route path="/signup" element={<Signup />} />
+            <Route path="/login" element={<Login />} />
         </Routes>
       </Router>
     </div>
