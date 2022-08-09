@@ -20,6 +20,7 @@ function Footer() {
                 </div>
             </div>
             <small className='credit-of-website'>I made everything in this website, including styling, images and functionality</small>
+            <small className='credit-of-website'>Only exception is the looping royal-free video in the background</small>
         </div>
     )
 }
