@@ -11,14 +11,14 @@ const app = express()
 //middleware
 app.use(express.json())
 
+//routes
+app.use('/api/comments', commentRoutes)
+app.use('/api/user', userRoutes)
+
 app.use((req, res, next) => {
     console.log(req.path, req.method)
     next()
 })
-
-//routes
-app.use('/api/comments', commentRoutes)
-app.use('/api/user', userRoutes)
 
 //connect to db
 mongoose.connect(process.env.MONG_URI)
@@ -31,3 +31,4 @@ mongoose.connect(process.env.MONG_URI)
     .catch((error) => {
         console.log(error)
     })
+

@@ -16,13 +16,13 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src={img}
-              text='Webcrawler'
+              text='Website-Crawler program'
               label='Java'
               path='https://github.com/Mataiaz/Website_Crawler'
             />
             <CardItem
               src={img2}
-              text='My 2D game'
+              text='2D game with self build game engine'
               label='SFML (C++)'
               path='https://github.com/SirFischer/Skeletons-and-Traps'
             />
@@ -30,19 +30,19 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src={img3}
-              text='My personal website'
+              text='Website (MERN)'
               label='React (Java Script)'
               path='https://github.com/Mataiaz/mycv/tree/master'
             />
             <CardItem
               src={img1}
-              text='My pc application'
+              text='Pc application'
               label='Flutter (Dart)'
               path='https://github.com/Mataiaz/My-Demo-App'
             />
             <CardItem
               src='images/img-8.jpg'
-              text='COMING SOON! My mobile application'
+              text='COMING SOON! Mobile application with audio system and backend support (Firebase)'
               label='Flutter (Dart)'
               path='/sign-up'
             />
