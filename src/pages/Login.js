@@ -14,6 +14,7 @@ const Login = () => {
 
   return (
     <form className="login" onSubmit={handleSubmit}>
+      <div className="error">NOTE: Log in currently only works on local setup</div>
       <h3>Log In</h3>
       
       <label>Email address:</label>

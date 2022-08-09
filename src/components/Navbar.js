@@ -62,10 +62,10 @@ function Navbar() {
               {!user && (
                 <div className='nav-item'>
               <Link to='/login' className='nav-links' onClick={closeMobileMenu}>
-                Login in!
+                Login in
               </Link>
               <Link to='/signup' className='nav-links' onClick={closeMobileMenu}>
-                Sign up!
+                Sign up
               </Link>
               </div>
               )}

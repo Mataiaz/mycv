@@ -14,8 +14,8 @@ const Signup = () => {
 
   return (
     <form className="signup" onSubmit={handleSubmit}>
+      <div className="error">NOTE: Sign up currently only works on local setup</div>
       <h3>Sign Up</h3>
-      
       <label>Email address:</label>
       <input 
         type="email" 
