@@ -11,7 +11,7 @@ function AboutMe() {
        <video src={vid} autoPlay loop muted />
       <h1>Hi!</h1>
       <p>My name is Mathias and i love programming</p>
-      <p>I have experience in React (java script), Flutter (dart), c/c++, SFML (c++), Java, Firebase and Git</p>
+      <p>I have experience in React (java script), Flutter (dart), c/c++, SFML (c++), Java, Firebase, Mongoose and Git</p>
       <p></p>
       <p></p>
       <p>I speak norwegian and english</p>

@@ -14,7 +14,7 @@ function Projects() {
     I can adapt, i will deliver on quality and i will always strive to be a better programmer!
     </h1>
       <p>
-        I am currently taking the education course at Noroff that started in august 2022 in backend-development
+        I am currently taking the back-end education course at Noroff that started in august 2022
       </p>
       <div className="hero-btns">
       <Buttonhref className='btns' buttonStyle='btn--outline' hrefvalue='https://github.com/Mataiaz'
