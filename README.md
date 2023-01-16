@@ -1,7 +1,6 @@
 # About this project #
 This a basic website which im currently using as my cv.
-This website took some time given that it was first proper project in java script (react)
-and facing the challenge of syntax that has been updated multiple times over the past years, making it hard to find code i could use.
+I used MERN stack to develop this website.
 
 FYI: None of the design is copyrighted.
 
